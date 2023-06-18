@@ -2,7 +2,16 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
-  console.log("inside generate password")
+  console.log("inside generate password");
+
+  let passwordLength = parseInt(prompt("please give password length between 8 and 128"));
+  if (Number.isNaN(passwordLength)){
+    alert("password length must a number");
+    return("please retry with proper length");
+  }
+
+  
+
 }
 
 // Write password to the #password input
