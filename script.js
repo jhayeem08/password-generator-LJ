@@ -20,6 +20,8 @@ function generatePassword(){
     return("please retry with length between 8 and 128");
   }
 
+let lower = confirm("press OK to include lower case characters in your password. Cancel otherwise");
+
 }
 
 // Write password to the #password input
