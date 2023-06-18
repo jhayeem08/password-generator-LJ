@@ -15,6 +15,11 @@ function generatePassword(){
     return("please retry with length between 8 and 128");
   }
 
+  if (passwordLength > 128){
+    alert("password length must be 128 or less characters");
+    return("please retry with length between 8 and 128");
+  }
+
 }
 
 // Write password to the #password input
