@@ -28,6 +28,15 @@ function generatePassword() {
     includedCharacters += lowerCharacters;
   }
   console.log("included characters = ", includedCharacters);
+
+  let upper = confirm("press OK to include upper case characters in your password. Cancel otherwise");
+  let upperCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+  if (upper){
+    includedCharacters += upperCharacters;
+  }
+  console.log("included characters = ", includedCharacters);
+
 }
 
 // Write password to the #password input
